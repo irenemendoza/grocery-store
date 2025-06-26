@@ -1,0 +1,186 @@
+:root {
+    --color-red: #F38160;
+    --color-black: #403C39;
+    --color-white: #FAFAFA;
+    --color-gray: #D0D0D240;
+    --text-font: "Poppins", sans-serif;
+    --title-font:"Montserrat", sans-serif;
+    --text-size: 12px;
+    --text-size2: 16px;
+    --title-size: 60px;
+}
+
+@mixin button() {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15%;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-family: var(--text-font);
+    font-size: var(--text-size);
+    color: var(--color-black);
+    font-weight: 400;
+    background-color: var(--color-white);
+}
+
+.header {
+    display: flex;
+    gap: 250px;
+    margin-bottom: 50px;
+
+    .logo img {
+        width: 190px;
+    }
+
+    .navbar {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--color-black);
+            &:hover {
+            color: var(--color-red);
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        }
+
+
+        .active {
+            color: var(--color-red);
+            text-decoration: underline;
+        }
+
+        aside {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            
+            .carrito {
+                display: flex;
+                align-items: center;
+                position: relative;
+            
+                .shopping-bag {
+                width: 20px;
+                }
+                .notification {
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            ul li:first-of-type a {
+                    @include button();
+                    background-color: var(--color-white);
+                    color: var(--color-red);
+                    text-decoration: underline;
+                    &:hover {
+                        font-weight: 600;
+                    }
+            }
+            
+            ul li:last-of-type a {
+                    @include button();
+                    &:hover {
+                        font-weight: 600;
+                        text-decoration: underline;
+                        background-color: var(--color-white);
+                        color: var(--color-red);
+                    }
+            }
+            
+        }
+        
+    }
+
+        
+
+        
+    }
+
+.main {
+       
+    .hero {
+       position: relative;
+        .hero-image {
+            width: 50%;
+            position: absolute;
+            right: 200px;
+            top: -92px;
+        } 
+        .hero-title {
+            max-width: 50%;
+            h1 {
+            font-family: var(--title-font);
+            font-size: var(--title-size);
+            margin-bottom: 30px;
+            span {
+                color: var(--color-red);
+            }
+        }
+
+        p {
+            font-size: var(--text-size2);
+            max-width: 75%;
+            margin-bottom: 30px;
+        }
+
+        }
+        
+        .searching input{
+                background-image: url(img/search.png);
+                background-size: 40px 40px;
+                background-repeat: no-repeat;
+                background-position: right center;
+                background-color: var(--color-gray);
+                padding: 10px;
+                border-radius: 5%;
+                margin-bottom: 30px;
+        }
+        
+
+        .services ul {
+             max-width: 50%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            list-style: none;
+        }
+    }
+
+}
+    
+
+    
+
+
+
+   

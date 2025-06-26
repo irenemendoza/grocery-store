@@ -22,5 +22,8 @@
     "webpack-merge": "^5.10.0"
   },
   "main": "webpack.common.js",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "sass": "^1.89.2"
+  }
 }
