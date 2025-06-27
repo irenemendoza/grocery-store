@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--color-white);
+}
+
 .container {
   max-width: 1400px;
   margin-left: auto;
@@ -25,12 +29,11 @@
   font-size: var(--text-size);
   color: var(--color-black);
   font-weight: 400;
-  background-color: var(--color-white);
 }
 
 .header {
   display: flex;
-  gap: 250px;
+  gap: 230px;
   margin-bottom: 50px;
 }
 .header .logo img {
@@ -40,28 +43,29 @@
   display: flex;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
 }
-.header .navbar ul {
+.header .navbar .menu ul {
   list-style: none;
   display: flex;
   gap: 30px;
   align-items: center;
 }
-.header .navbar a {
+.header .navbar .menu ul a {
   text-decoration: none;
   color: var(--color-black);
+  padding: 5px;
 }
-.header .navbar a:hover {
+.header .navbar .menu ul a:hover {
   color: var(--color-red);
   text-decoration: underline;
   font-weight: 600;
 }
-.header .navbar .active {
+.header .navbar .menu ul .active {
   color: var(--color-red);
   text-decoration: underline;
 }
 .header .navbar aside {
-  margin-left: auto;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -80,6 +84,12 @@
   height: 5px;
   top: 0;
   right: 0;
+}
+.header .navbar aside ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 .header .navbar aside ul li:first-of-type a {
   display: inline-block;
@@ -116,6 +126,10 @@
   position: relative;
 }
 .main .hero .hero-image {
+  background-image: url(img/rectangle.png), url(img/rectangle-1.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 180px 100px, 240px 180px;
   width: 50%;
   position: absolute;
   right: 200px;
@@ -147,9 +161,39 @@
   border-radius: 5%;
   margin-bottom: 30px;
 }
+.main .hero .services {
+  max-width: 50%;
+  margin-bottom: 50px;
+}
 .main .hero .services ul {
   max-width: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
+  position: relative;
+  gap: 10px;
+}
+.main .hero .services ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.main .hero .services ul li img {
+  width: 15px;
+}
+.main .categories {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.main .categories article {
+  max-width: 200px;
+}
+.main .categories article img {
+  width: 85px;
+  padding-bottom: 10px;
+}
+.main .categories article h2 {
+  font-size: var(--text-size2);
+  padding-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
