@@ -1,0 +1,6 @@
+@use "../utils/variables" as v;
+
+body {
+    font-family: v.$text-font;
+    font-size: v.$text-size;
+}

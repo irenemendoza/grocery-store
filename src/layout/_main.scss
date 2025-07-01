@@ -1,0 +1,115 @@
+@use '../utils/variables' as v;
+
+.hero-image{
+    position: relative;
+    img {
+        position: absolute;
+       
+    }
+    img.man {
+        width: 35%;
+        right: 350px;
+        top: 50px;
+    }
+    img.rectangule1 {
+        width: 25%;
+        right: 460px;
+        top: 120px;
+        z-index: -1;
+    }
+
+    img.rectangule2 {
+        width: 25%;
+        right: 350px;
+        top: 210px;
+        z-index: -1;
+    }
+}
+.hero-container {
+    width: 50%;
+    margin-bottom: 100px;
+
+    .hero-title {
+        font-family: v.$title-font;
+        font-size: v.$title-size;
+        padding-top: 100px;
+        margin-bottom: 20px;
+        
+        span {
+            color: v.$color-red;
+        }
+    }
+
+    .hero-subtitle {
+        width: 65%;
+        font-size: v.$text2-size;
+        color: v.$color-gray;
+        margin-bottom: 25px;
+    }
+}
+ .hero-search {
+    display: flex;
+    justify-content: flex-start;
+    
+    input {
+        padding: 10px;
+        width: 50%;
+        background-color: v.$color-gray2;
+        color: v.$color-gray;
+        border: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-bottom: 25px;
+    }
+    img {
+        background-color: v.$color-red;
+        width: 36px;
+        height: 36px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 10px;
+    }
+}
+
+.hero-info ul{
+    flex-wrap: wrap;
+    width: 45%;
+    gap: 10px;
+
+    li {
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('../assets/img/Check\ \(1\).svg');
+            background-size: 15px;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+               
+        }
+    }
+}
+
+.categories ul{
+    justify-content: space-between;
+    
+
+    article {
+        width: 17%;
+
+        h2 {
+            font-size: v.$text2-size;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        p{
+            color: v.$color-gray;
+        }
+    }
+}

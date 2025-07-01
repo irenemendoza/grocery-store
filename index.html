@@ -5,13 +5,104 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Header design example for a grocery store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <h1>Hola soy un título</h1>
-  <p>Hola soy un párrafo</p>
-  <div id="app"></div>
+  <section class="container">
+    <section class="header">
+      <div class="header-logo">
+        <a href="#">
+          <img src="src/assets/img/FinestMart.png" alt="Logo">
+        </a>
+      </div>
+      <div class="navbars">
+        <nav class="header-principal-menu">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <aside class="header-login">
+          <ul>
+            <li><a href="#"><img src="src/assets/img/Shopping Bag.svg" alt=""><img
+                  src="src/assets/img/Ellipse notif.png" alt=""></a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#" class="btn">Sign Up</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <main class="page">
+      <section class="hero">
+        <div class="hero-image">
+          <img class="man" src="src/assets/img/delivery-concept-handsome-african-american-deliver-AZUZTZ3 1.png" alt="">
+          <img src="src/assets/img/rectangle.png" alt="" class="rectangule1">
+          <img src="src/assets/img/rectangle-1.png" alt="" class="rectangule2">
+        </div>
+        <div class="hero-container">
+          <h1 class="hero-title">
+            Let your <span>groceries</span> come to you
+          </h1>
+          <p class="hero-subtitle">
+            Get fresh groceries online without stepping out to make delicious food with the freshest ingredients
+          </p>
+          <div class="hero-search">
+            <input type="text" placeholder="Search here">
+            <img src="src/assets/img/Search.svg" alt="" class="search">
+          </div>
+          <div class="hero-info">
+            <ul>
+              <li>Fresh Vegetables</li>
+              <li>100% Guarantee</li>
+              <li>Cash on Delivery</li>
+              <li>Fast Delivery</li>
+            </ul>
+          </div>
+        </div>
+
+
+      </section>
+      <section class="categories">
+        <ul>
+          <article>
+            <img src="src/assets/img/Dairy.png" alt="">
+            <h2>Dairy Products</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
+          <article>
+            <img src="src/assets/img/Fruits and vegetables.png" alt="">
+            <h2>Vegetables & Fruits</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
+          <article>
+            <img src="src/assets/img/Condiments.png" alt="">
+            <h2>Spices and Seasonings</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
+          <article>
+            <img src="src/assets/img/Baby food.png" alt="">
+            <h2>Honey</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
+          <article>
+            <img src="src/assets/img/Grain and pasta.png" alt="">
+            <h2>Flour</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
+        </ul>
+      </section>
+    </main>
+  </section>
   <script type="module" src="/src/main.js"></script>
 </body>
 

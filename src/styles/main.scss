@@ -1,9 +1,7 @@
-$primary-color: red;
-$secondary-color: green;
-
-h1 {
-    color: $primary-color;
-}
-p{
-    color: $secondary-color;
-}
+@use '../base/base';
+@use '../base/typography';
+@use '../layout/header';
+@use '../utils/variables' as v;
+@use '../components/navbar';
+@use '../utils/mixins' as m;
+@use '../layout/main';

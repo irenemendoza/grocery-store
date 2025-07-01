@@ -1,0 +1,25 @@
+@use '../utils/variables' as v;
+
+.header-principal-menu ul{
+    gap: 45px;
+
+    li a {
+        color: v.$color-black;
+
+        &:hover, &.active {
+            color: v.$color-red;
+            position: relative;
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 100%;
+                height: 2px;
+                background-color: v.$color-red;
+                position: absolute;
+                left: 0;
+                top: 20px;
+            }
+        }
+    }
+}
+
